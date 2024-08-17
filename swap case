@@ -1,0 +1,22 @@
+def swap_case(s):
+    swap=''
+    for char in s:
+        if char.upper()!=char:
+            swap+=char.upper()
+        elif  char.lower()!=char:
+            swap+=char.lower()
+        else:
+            swap+=char 
+    return swap            
+
+if __name__ == '__main__':
+    s = input()
+    result = swap_case(s)
+    print(result)
+#OUTPUT
+Input (stdin)
+HackerRank.com presents "Pythonist 2".
+Your Output (stdout)
+hACKERrANK.COM PRESENTS "pYTHONIST 2".
+Expected Output
+hACKERrANK.COM PRESENTS "pYTHONIST 2".
